@@ -1,0 +1,22 @@
+@font-face{
+    font-family: "Lato";
+    src: url('../font/Lato/Lato-Regular.woff'),
+    url('../font/Lato/Lato-Regular.ttf') format('truetype'),
+    url('../font/Lato/Lato-Regular.otf') format('opentype');
+    src: url('../font/Lato/Lato-Bold.woff'),
+    url('../font/Lato/Lato-Bold.woff') format('truetype'),
+    url('../font/Lato/Lato-Bold.otf') format('opentype');
+    src: url('../font/Lato/Lato-Italic.woff'),
+    url('../font/Lato/Lato-Italic.ttf') format('truetype'),
+    url('../font/Lato/Lato-Italic.otf') format('opentype');
+    font-family: "Raleway";
+    src: url('../font/Raleway/Raleway-Regular.woff'),
+    url('../font/Raleway/Raleway-Regular.ttf') format('truetype'),
+    url('../font/Raleway/Raleway-Regular.otf') format('opentype');
+    src: url('../font/Raleway/Raleway-Bold.woff'),
+    url('../font/Raleway/Raleway-Bold.woff') format('truetype'),
+    url('../font/Raleway/Raleway-Bold.otf') format('opentype');
+    src: url('../font/Raleway/Raleway-Italic.woff'),
+    url('../font/Raleway/Raleway-Italic.ttf') format('truetype'),
+    url('../font/Raleway/Raleway-Italic.otf') format('opentype');
+ }
