@@ -1,22 +1,187 @@
-@font-face{
-    font-family: "Lato";
-    src: url('../font/Lato/Lato-Regular.woff'),
-    url('../font/Lato/Lato-Regular.ttf') format('truetype'),
-    url('../font/Lato/Lato-Regular.otf') format('opentype');
-    src: url('../font/Lato/Lato-Bold.woff'),
-    url('../font/Lato/Lato-Bold.woff') format('truetype'),
-    url('../font/Lato/Lato-Bold.otf') format('opentype');
-    src: url('../font/Lato/Lato-Italic.woff'),
-    url('../font/Lato/Lato-Italic.ttf') format('truetype'),
-    url('../font/Lato/Lato-Italic.otf') format('opentype');
-    font-family: "Raleway";
-    src: url('../font/Raleway/Raleway-Regular.woff'),
-    url('../font/Raleway/Raleway-Regular.ttf') format('truetype'),
-    url('../font/Raleway/Raleway-Regular.otf') format('opentype');
-    src: url('../font/Raleway/Raleway-Bold.woff'),
-    url('../font/Raleway/Raleway-Bold.woff') format('truetype'),
-    url('../font/Raleway/Raleway-Bold.otf') format('opentype');
-    src: url('../font/Raleway/Raleway-Italic.woff'),
-    url('../font/Raleway/Raleway-Italic.ttf') format('truetype'),
-    url('../font/Raleway/Raleway-Italic.otf') format('opentype');
+@font-face {
+  font-family : "Lato";
+  src : url("../font/Lato/Lato-Regular.woff"), url("../font/Lato/Lato-Regular.ttf") format('truetype'), url("../font/Lato/Lato-Regular.otf") format('opentype');
+  src : url("../font/Lato/Lato-Bold.woff"), url("../font/Lato/Lato-Bold.woff") format('truetype'), url("../font/Lato/Lato-Bold.otf") format('opentype');
+  src : url("../font/Lato/Lato-Italic.woff"), url("../font/Lato/Lato-Italic.ttf") format('truetype'), url("../font/Lato/Lato-Italic.otf") format('opentype');
+  font-family : "Raleway";
+  src : url("../font/Raleway/Raleway-Regular.woff"), url("../font/Raleway/Raleway-Regular.ttf") format('truetype'), url("../font/Raleway/Raleway-Regular.otf") format('opentype');
+  src : url("../font/Raleway/Raleway-Bold.woff"), url("../font/Raleway/Raleway-Bold.woff") format('truetype'), url("../font/Raleway/Raleway-Bold.otf") format('opentype');
+  src : url("../font/Raleway/Raleway-Italic.woff"), url("../font/Raleway/Raleway-Italic.ttf") format('truetype'), url("../font/Raleway/Raleway-Italic.otf") format('opentype');
+  }
+ /* mise en place grille + cadre CV */
+ #CV-container {
+  display: grid;
+  width: 1160px;
+  height: auto;
+  grid-template-areas: 
+    "name name"
+    "contact contact"
+    "about experience"
+    "about sns";
+  
+  grid-template-rows:auto 1fr 1160px;
+  margin: auto;
+  border-right: #000000 solid ;
  }
+
+ /* formattage nom + photo */
+  #name {
+    height: 100%;
+    grid-area: name;
+    background-color: #782221;
+    color: #ffffff
+  }
+
+  .photo{
+    border-radius: 50%;
+    max-width: 90px;
+    margin: auto;
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 50px;
+  }
+  
+  .fontname{
+    font-family: 'Lato';
+    font-style: normal;
+    text-align: center;
+  }
+
+ /* formattage infos contact */
+  #contact {
+    grid-area: contact;
+    height: 90px;
+    background-color: #000000;
+  }
+
+  .contactinfo{
+    list-style-type: none;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+  }
+
+  a{
+    color:#ffffff;
+    text-decoration: none;
+  }
+
+  ul{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* formattage experience */
+  #experience {
+    width: 800px;
+    height: auto;
+    grid-area: experience;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+  }
+
+  /* formattage colonne A propos */
+  #about {
+    width: 360px;
+    grid-area: about;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #782221;
+    color:#ffffff
+  }
+
+  /* Section a propos */
+  #aboutme{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    }
+
+  .about{
+    width: 100%;
+    text-indent: 15%;
+    text-align:justify;
+    justify-items: right;
+  }
+
+  .h3about{
+    width: auto;
+    background-color: #dbc2a4;
+    color:#000000;
+    align-self: auto;
+    background-position: left;
+    border-left-width: 0;
+  }
+
+  /* Section langue */
+  #language{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .listlanguage{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Section intérêt*/
+  #interest{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .interest{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* formattage colonne expérience */
+  h3{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    background-color: #dbc2a4;
+    border-left: 10px solid #782221;
+    align-self: center;
+    text-indent: 5px;
+  }
+  
+  /* formattage SNS */
+  #sns{
+    width: 800px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    grid-area: sns;
+    background-color: #782221;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .listtype{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    justify-content: center;
+  }
+
+  .imagesize{
+    max-width: 52px;
+    max-height: 52px;
+    padding: 10px 5px 5px;
+  }
+
+  .footertext{
+    text-align: center;
+  }
+
