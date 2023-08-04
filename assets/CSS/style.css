@@ -148,15 +148,48 @@
       padding-left: 30px;
     }
   
-    /* formattage colonne expérience */
+    /* formattage colonne diplôme */  
     h3{
-      width: 95%;
-      display: flex;
-      flex-direction: column;
       background-color: #dbc2a4;
       border-left: 7px solid #782221;
-      align-self: center;
       text-indent: 5px;
+    }
+       
+    .exp{
+      width: 95%;
+      align-self: center;
+    }
+
+    .expsub{
+      align-self: center;
+    }
+
+    /* formattage colonne diplôme */  
+    .diplom{
+      width: 95%;
+      align-self: center;
+    }
+       
+    .diplomlist{
+      align-self: center;
+    }
+
+    .diplomsub{
+      align-self: center;
+    }
+    
+    /* formattage colonne intérêts */  
+    .skills{
+      width: 95%;
+      align-self: center;
+    }
+       
+    .skillslist{
+      align-self: center;
+    }
+
+    .skillssub{
+      align-self: center;
     }
     
     /* formattage SNS */
