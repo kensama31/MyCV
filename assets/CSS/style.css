@@ -148,7 +148,7 @@
       padding-left: 30px;
     }
   
-    /* formattage colonne diplôme */  
+    /* formattage colonne expérience*/  
     h3{
       background-color: #dbc2a4;
       border-left: 7px solid #782221;
@@ -162,6 +162,12 @@
 
     .expsub{
       align-self: center;
+    }
+
+    .expfull{
+      display: flexbox;
+      flex-direction: column;
+      align-items: flex-start;
     }
 
     /* formattage colonne diplôme */  
@@ -178,6 +184,13 @@
       align-self: center;
     }
     
+    .diplomfull{
+      display: flexbox;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-left: 30px;
+    }
+    
     /* formattage colonne intérêts */  
     .skills{
       width: 95%;
@@ -187,9 +200,11 @@
     .skillslist{
       align-self: center;
     }
-
-    .skillssub{
-      align-self: center;
+  
+    .skillsfull{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
     }
     
     /* formattage SNS */
