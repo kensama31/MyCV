@@ -165,7 +165,7 @@
     }
 
     .expfull{
-      display: flexbox;
+      display: flex;
       flex-direction: column;
       align-items: flex-start;
     }
@@ -185,7 +185,7 @@
     }
     
     .diplomfull{
-      display: flexbox;
+      display: flex;
       flex-direction: column;
       align-items: flex-start;
       padding-left: 30px;
