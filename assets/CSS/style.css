@@ -253,6 +253,10 @@
       list-style-type: none;
       justify-content: center;
     }
+
+    .opacity:hover{
+      filter: opacity(0.70);
+    }
   
     .imagesize{
       max-width: 52px;
