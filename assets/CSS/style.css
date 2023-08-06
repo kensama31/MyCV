@@ -38,8 +38,18 @@
       margin: auto;
       display: block;
       margin-top: 50px;
+      box-shadow: 3px 3px 0.5em 0.1em white,
+      -3px 3px 0.5em 0.1em white,
+      -3px -3px 0.5em 0.1em white,
+      3px -3px 0.5em 0.1em white;
     }
-    
+
+    .photo:hover{
+      cursor: zoom-in;
+      transition: transform;
+      transform: scale(1.10);
+    }
+
     .fontname{
       font-family: 'Lato';
       font-style: normal;
@@ -63,6 +73,10 @@
     a{
       color:#ffffff;
       text-decoration: none;
+    }
+
+    .link:hover{
+      text-decoration: underline;
     }
   
     ul{
@@ -154,9 +168,13 @@
       text-indent: 5px;
     }
 
-    h3:hover{
+    .h3hover:hover{
       border-left: 7px solid #782221;
       text-indent: 5px;
+    }
+
+    .h3about{
+      background-color: #dbc2a4;
     }
   
     /* formattage colonne expérience*/  
