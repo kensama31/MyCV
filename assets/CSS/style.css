@@ -148,19 +148,20 @@
       padding-left: 30px;
     }
   
-    /* formattage colonne expérience*/  
+    /* formattage titres H3 */  
     h3{
       background-color: #dbc2a4;
+      text-indent: 5px;
+    }
+
+    h3:hover{
       border-left: 7px solid #782221;
       text-indent: 5px;
     }
-       
-    .exp{
+  
+    /* formattage colonne expérience*/  
+    #exp{
       width: 95%;
-      align-self: center;
-    }
-
-    .expsub{
       align-self: center;
     }
 
@@ -170,17 +171,20 @@
       align-items: flex-start;
     }
 
-    /* formattage colonne diplôme */  
-    .diplom{
-      width: 95%;
-      align-self: center;
-    }
-       
-    .diplomlist{
-      align-self: center;
+    .exp1:hover{
+      border-left: 7px solid #782221;
+      padding-left: 5px;
     }
 
-    .diplomsub{
+    .exp2:hover{
+      border-left: 7px solid #782221;
+      padding-left: 5px;
+    }
+
+
+    /* formattage colonne diplôme */  
+    #diplom{
+      width: 95%;
       align-self: center;
     }
     
@@ -190,21 +194,31 @@
       align-items: flex-start;
       padding-left: 30px;
     }
+
+    .diplom1:hover{
+      border-left: 7px solid #782221;
+      padding-left: 5px;
+    }
+
+    .diplom2:hover{
+      border-left: 7px solid #782221;
+      padding-left: 5px;
+    }
     
     /* formattage colonne intérêts */  
-    .skills{
+    #skills{
       width: 95%;
       align-self: center;
     }
-       
+
     .skillslist{
-      align-self: center;
-    }
-  
-    .skillsfull{
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+    }
+
+    .skillslist:hover{
+      border-left: 7px solid #782221;
     }
     
     /* formattage SNS */
@@ -232,5 +246,3 @@
       width: auto;
       text-align: center;
     }
-  
-  
