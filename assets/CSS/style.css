@@ -1,13 +1,14 @@
 @font-face {
-    font-family : "Lato";
-    src : url("../font/Lato/Lato-Regular.woff"), url("../font/Lato/Lato-Regular.ttf") format('truetype'), url("../font/Lato/Lato-Regular.otf") format('opentype');
-    src : url("../font/Lato/Lato-Bold.woff"), url("../font/Lato/Lato-Bold.woff") format('truetype'), url("../font/Lato/Lato-Bold.otf") format('opentype');
-    src : url("../font/Lato/Lato-Italic.woff"), url("../font/Lato/Lato-Italic.ttf") format('truetype'), url("../font/Lato/Lato-Italic.otf") format('opentype');
-    font-family : "Raleway";
-    src : url("../font/Raleway/Raleway-Regular.woff"), url("../font/Raleway/Raleway-Regular.ttf") format('truetype'), url("../font/Raleway/Raleway-Regular.otf") format('opentype');
-    src : url("../font/Raleway/Raleway-Bold.woff"), url("../font/Raleway/Raleway-Bold.woff") format('truetype'), url("../font/Raleway/Raleway-Bold.otf") format('opentype');
-    src : url("../font/Raleway/Raleway-Italic.woff"), url("../font/Raleway/Raleway-Italic.ttf") format('truetype'), url("../font/Raleway/Raleway-Italic.otf") format('opentype');
+    font-family: Lato;
+    src: url("../font/Lato/Lato-Regular.woff"), url("../font/Lato/Lato-Regular.ttf") format('truetype'), url("../font/Lato/Lato-Regular.otf") format('opentype');
+    src: url("../font/Lato/Lato-Bold.woff"), url("../font/Lato/Lato-Bold.woff") format('truetype'), url("../font/Lato/Lato-Bold.otf") format('opentype');
+    src: url("../font/Lato/Lato-Italic.woff"), url("../font/Lato/Lato-Italic.ttf") format('truetype'), url("../font/Lato/Lato-Italic.otf") format('opentype');
+    font-family: raleway;
+    src: url("../font/Raleway/Raleway-Regular.woff"), url("../font/Raleway/Raleway-Regular.ttf") format('truetype'), url("../font/Raleway/Raleway-Regular.otf") format('opentype');
+    src: url("../font/Raleway/Raleway-Bold.woff"), url("../font/Raleway/Raleway-Bold.woff") format('truetype'), url("../font/Raleway/Raleway-Bold.otf") format('opentype');
+    src: url("../font/Raleway/Raleway-Italic.woff"), url("../font/Raleway/Raleway-Italic.ttf") format('truetype'), url("../font/Raleway/Raleway-Italic.otf") format('opentype');
     }
+
    /* mise en place grille + cadre CV */
    #CV-container {
     display: grid;
@@ -51,7 +52,7 @@
     }
 
     .fontname{
-      font-family: 'Lato';
+      font-family: raleway;
       font-style: normal;
       text-align: center;
     }
@@ -73,6 +74,8 @@
     a{
       color:#ffffff;
       text-decoration: none;
+      font-family: raleway;
+      font-style: normal;
     }
 
     .link:hover{
@@ -121,6 +124,8 @@
       text-align:justify;
       margin:auto;
       padding-left: 10px;
+      font-family: raleway;
+      font-style: normal;
     }
   
     .h3about{
@@ -145,6 +150,8 @@
       align-items: flex-start;
       margin: auto;
       padding-left: 30px;
+      font-family: raleway;
+      font-style: normal;
     }
   
     /* Section intérêt*/
@@ -160,12 +167,16 @@
       align-items: flex-start;
       margin: auto;
       padding-left: 30px;
+      font-family: raleway;
+      font-style: normal;
     }
   
-    /* formattage titres H3 */  
+    /* formattage titres H3 et H4 */  
     h3{
       background-color: #dbc2a4;
       text-indent: 5px;
+      font-family: Lato, serif;
+      font-style: normal;
     }
 
     .h3hover:hover{
@@ -175,6 +186,13 @@
 
     .h3about{
       background-color: #dbc2a4;
+      font-family: Lato;
+      font-style: normal;
+    }
+
+    h4{
+      font-family: Lato;
+      font-style: normal;
     }
   
     /* formattage colonne expérience*/  
@@ -187,6 +205,18 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+      font-family: raleway;
+      font-style: normal;
+    }
+
+    .exp1{
+      font-family: raleway;
+      font-style: normal;
+    }
+
+    .exp2{
+      font-family: raleway;
+      font-style: normal;
     }
 
     .exp1:hover{
@@ -213,6 +243,16 @@
       padding-left: 30px;
     }
 
+    .diplom1{
+      font-family: raleway;
+      font-style: normal;
+    }
+
+    .diplom2{
+      font-family: raleway;
+      font-style: normal;
+    }
+
     .diplom1:hover{
       border-left: 7px solid #782221;
       padding-left: 5px;
@@ -223,7 +263,7 @@
       padding-left: 5px;
     }
     
-    /* formattage colonne intérêts */  
+    /* formattage colonne Compétences */  
     #skills{
       width: 95%;
       align-self: center;
@@ -233,6 +273,8 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+      font-family: raleway;
+      font-style: normal;
     }
 
     .skillslist:hover{
